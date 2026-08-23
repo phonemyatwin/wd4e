@@ -22,6 +22,12 @@ p{
     text-align: justify;
 }
 
+.list{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 1.5rem;
+}
+
 #item1{
     list-style: none;
 }
