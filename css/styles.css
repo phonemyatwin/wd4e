@@ -14,13 +14,16 @@ ul {
 a {
     text-decoration: none;
 }
-
+/* Start of the Header */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #fff;
     box-shadow: 0 8px 16px #0002;
     padding: 1rem;
+    position: sticky;
+    top: 0;
 }
 
 .logo_image {
@@ -86,9 +89,10 @@ header {
     background-color: #f0f0f0;
     color: #000;
 }
+/* End of the Heading */
 
 
-
+/* Start of the Main */
 main {
     padding: 1rem;
 }
@@ -145,56 +149,24 @@ figcaption {
     justify-content: center;
     align-items: center;
 }
+/* End of the Main */
 
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+/* Start of the Footer */
+footer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
     padding: 1rem;
-    box-shadow: 0 -8px 16px #0002;
-}
-
-.flogo {
-    margin: 0.5rem 1rem;
-}
-
-.fmenu {
-    margin: 0 1rem 0.2rem 1rem;
-}
-
-
-.flogo_image {
-    width: 24px;
-    height: 24px;
-}
-
-.flogo_img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-p {
-    color: #000;
-    font-size: 12px;
-}
-
-.fnav_list {
-    display: flex;
-    gap: 1rem;
-}
-
-.fnav_link {
-    color: #000;
-    font-size: 12px;
-    text-transform: capitalize;
     background-color: #f0f0f0;
-    padding: 0.125rem 0.25rem;
-    border-radius: 8px;
-    transition: 0.4s;
 }
 
-.fnav_link:hover {
-    color: #ffffff;
-    background-color: #000;
+.footer_heading{
+    text-transform: capitalize;
+    padding: 1rem;
 }
+
+.footer_link{
+    text-transform: capitalize;
+    color: #000;
+}
+/* End of the Footer */
