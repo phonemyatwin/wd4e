@@ -169,4 +169,9 @@ footer{
     text-transform: capitalize;
     color: #000;
 }
+
+.footer_icon_list{
+    display: flex;
+    gap: 1rem;
+}
 /* End of the Footer */
