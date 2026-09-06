@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="600" height="350" fill="#1F2421" />
+
+  <!-- Outer Border Frame -->
+  <rect x="20" y="20" width="560" height="310" rx="6" fill="none" stroke="#E2E4DE" stroke-width="1.5" stroke-dasharray="6,6" opacity="0.4" />
+
+  <!-- Code Editor Window Graphic -->
+  <rect x="185" y="55" width="230" height="135" rx="6" fill="#141715" stroke="#2C332F" stroke-width="1.5" />
+  
+  <!-- Window Controls -->
+  <circle cx="205" cy="72" r="4" fill="#A51C30" />
+  <circle cx="218" cy="72" r="4" fill="#E7C2C7" />
+  <circle cx="231" cy="72" r="4" fill="#5C6460" />
+  <line x1="185" y1="85" x2="415" y2="85" stroke="#2C332F" stroke-width="1" />
+
+  <!-- Code Brackets & Syntax -->
+  <text x="210" y="115" font-family="monospace" font-size="16" font-weight="700" fill="#A51C30">&lt;<tspan fill="#FBFBF8">div</tspan>&gt;</text>
+  <text x="235" y="140" font-family="monospace" font-size="13" font-weight="600" fill="#E7C2C7">Django + React</text>
+  <text x="210" y="165" font-family="monospace" font-size="16" font-weight="700" fill="#A51C30">&lt;/<tspan fill="#FBFBF8">div</tspan>&gt;</text>
+
+  <!-- Typography -->
+  <text x="300" y="235" font-family="'Merriweather', Georgia, serif" font-size="22" font-weight="bold" fill="#FBFBF8" text-anchor="middle">Harvard CS50W</text>
+  <text x="300" y="265" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#A51C30" text-anchor="middle" letter-spacing="3">WEB PROGRAMMING</text>
+  <text x="300" y="290" font-family="'Inter', sans-serif" font-size="11" fill="#5C6460" text-anchor="middle" letter-spacing="1.5">PYTHON • JAVASCRIPT • DJANGO • SQL</text>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="600" height="350" fill="#1F2421" />
+  
+  <!-- Outer Border -->
+  <rect x="20" y="20" width="560" height="310" rx="6" fill="none" stroke="#E2E4DE" stroke-width="2" stroke-dasharray="6,6" opacity="0.6" />
+  
+  <!-- CS50 Badge Background -->
+  <rect x="210" y="85" width="180" height="70" rx="8" fill="#A51C30" />
+  
+  <!-- CS50 Text Banner -->
+  <text x="300" y="138" font-family="'Inter', sans-serif" font-size="44" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="4">CS50</text>
+  
+  <!-- Course Subtitle -->
+  <text x="300" y="205" font-family="'Merriweather', Georgia, serif" font-size="20" font-weight="bold" fill="#FBFBF8" text-anchor="middle">Introduction to Computer Science</text>
+  
+  <!-- Accent Footer Text -->
+  <text x="300" y="240" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#A51C30" text-anchor="middle" letter-spacing="3">HARVARD UNIVERSITY</text>
+</svg>

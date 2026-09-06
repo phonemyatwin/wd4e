@@ -199,6 +199,16 @@ main {
     transform: translate(0, -0.25rem);
 }
 
+/* Start of course_image */
+.course_image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #E2E4DE;
+}
+/* End of course_image */
+
 /* Start of the card_top */
 .card_top {
     display: flex;
