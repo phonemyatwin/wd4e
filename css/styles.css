@@ -1,19 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,240;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,240;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 
 * {
     margin: 0;
     padding: 0;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    /* letter-spacing: 0.05rem; */
+    line-height: 1.5rem;
+    box-sizing: border-box;
 }
 
 /* Start of the reusable */
-ol,
-ul {
+ul{
     list-style: none;
 }
 
 a {
     text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Merriweather', Georgia, serif;
 }
 
 /* End of the reusable */
@@ -24,8 +37,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 5%;
-    background-color: #ffffff;
+    padding: 2rem 8%;
+    background-color: #FFFFFF;
     position: sticky;
     top: 0;
     border-bottom: 1px solid #E2E4DE;
@@ -39,26 +52,26 @@ header {
 
 .logo_span {
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 700;
-    border: 1px solid #e7c2c7;
+    border: 1px solid #E7C2C7;
     border-radius: 4px;
-    padding: 2px 7px;
-    background-color: #f9ecee;
-    color: #a51c30;
+    padding: 0.125rem 0.5rem;
+    background-color: #F9ECEE;
+    color: #A51C30;
 }
 
 .logo_link {
     text-transform: capitalize;
     font-size: 1.2rem;
     font-weight: 700;
-    color: #1f2421;
+    color: #1F2421;
 }
 
 .nav_list {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .nav_link {
@@ -66,25 +79,26 @@ header {
     text-transform: capitalize;
     font-size: 1rem;
     font-weight: 500;
-    color: #5c6460;
-    transition: 0.4s;
+    color: #5C6460;
+    transition: 0s;
     padding: 0.5rem 0;
 }
 
 .nav_link:hover {
-    color: #1f2421;
+    color: #1F2421;
 }
 
 .nav_link.active {
-    color: #1f2421;
-    border-bottom: 3px solid #a51c30;
+    color: #1F2421;
+    border-bottom: 3px solid #A51C30;
 }
 
 .line {
     position: sticky;
-    top: 5.1rem;
-    border: 2px solid #a51c30;
+    top: 6rem;
+    border: 2px solid #A51C30;
 }
+
 /* End of the header  */
 
 
@@ -94,12 +108,13 @@ header {
     grid-template-columns: repeat(1fr, 1);
     text-align: center;
     gap: 2rem;
-    padding: 2rem;
-    background-color: #fbfbf8;
+    padding: 2rem 8%;
+    background-color: #FBFBF8;
+    border-bottom: 1px solid #E2E4DE;
 }
 
 .title_span {
-    color: #a51c30;
+    color: #A51C30;
     font-size: 1rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -114,29 +129,214 @@ header {
 
 .page_subtitle {
     font-size: 1rem;
-    color: #5c6460;
-}
-
-.project_notice {
-    border: 1px solid #E2E4DE;
-    padding: 0.5rem 1rem;
-    background-color: #ffffff;
-    border-radius: 4rem;
-    text-transform: capitalize;
-    color: #5c6460;
-    max-width: fit-content;
-    margin: 0 auto;
-}
-
-.project_notice strong {
-    font-weight: bolder;
-    color: #1f2421;
+    color: #5C6460;
+    max-width: 680px;
+    margin: 0 auto 1.5rem;
 }
 
 /* End of the title section */
 
 /* Start of the main  */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 8%;
+    background-color: #FBFBF8;
+    border-bottom: 1px solid #E2E4DE;
+}
 
+/* Start of the main_heading */
+.main_heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #E2E4DE;
+}
+
+.left {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1F2421;
+}
+
+.right {
+    text-transform: capitalize;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #5C6460;
+    background-color: #FFFFFF;
+    padding: 0.5rem 1rem;
+    border-radius: 5rem;
+    border: 1px solid #E2E4DE;
+}
+
+/* End of the main_heading */
+
+/* Start of the card_container */
+.card_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+/* Start of the card */
+.card {
+    padding: 1.5rem;
+    background-color: #FFFFFF;
+    border: 1px solid #E2E4DE;
+    border-top: 4px solid #A51C30;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translate(0, -0.25rem);
+}
+
+/* Start of the card_top */
+.card_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course_from {
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.125rem 0.5rem;
+    background: #F9ECEE;
+    color: #A51C30;
+    border-radius: 4px;
+}
+
+.course_code {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #5C6460;
+}
+
+/* End of the card_top */
+
+/* Start of the about_course */
+.about_course {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px dotted #E2E4DE;
+}
+
+.course_title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1F2421;
+}
+
+.course_instructor {
+    font-size: 0.8rem;
+    color: #5C6460;
+    font-style: italic;
+}
+
+.course_description {
+    font-size: 0.9rem;
+    color: #5C6460;
+}
+
+/* End of the about_course */
+
+/* Start of the syllabus */
+.syllabus_disclosure {
+    border-bottom: 2px dotted #E2E4DE;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.syllabus_disclosure summary {
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #5C6460;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+}
+
+.syllabus_disclosure summary::after{
+    content: "+topics";
+    font-size: 0.8rem;
+    text-transform: capitalize;
+    color: #A51C30;
+}
+
+.syllabus_disclosure[open] summary::after{
+    content: "-close";
+}
+
+.syllabus_list {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 1rem 1rem;
+}
+
+.syllabus_item{
+    font-size: 0.8rem;
+    color: #5C6460;
+}
+
+/* End of the syllabus */
+
+/* Start of the tag_group */
+.tag_list {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tag_item {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #5C6460;
+    padding: 0.125rem 0.5rem;
+    background-color: #FBFBF8;
+    border: 1px solid #E2E4DE;
+    border-radius: 4px;
+}
+
+/* End of the tag_group */
+
+/* Start of the card_bottom */
+
+.card_link {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    background-color: #A51C30;
+    border-radius: 4px;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    transition: 0s;
+}
+
+.card_link:hover {
+    background-color: #8A1B29;
+}
+
+/* End of the card_bottom */
+/* End of the card */
+/* End of the card_container */
 /* End of the main */
 
 
@@ -145,9 +345,8 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding: 2rem 5%;
-    border-top: 1px solid #E2E4DE;
-    background: #ffffff;
+    padding: 2rem 8%;
+    background: #FFFFFF;
 }
 
 /* Start of the top group */
@@ -156,6 +355,7 @@ footer {
     grid-template-columns: 2fr 1fr 1fr;
     gap: 3rem;
     padding: 2rem 0;
+    border-bottom: 1px solid #E2E4DE;
 }
 
 .top_footer {
@@ -173,12 +373,12 @@ footer {
 
 .footer_paragraph {
     font-size: 0.8rem;
-    color: #5c6460;
+    color: #5C6460;
 }
 
 .footer_paragraph strong {
     font-weight: bolder;
-    color: #5c6460;
+    color: #5C6460;
 }
 
 .footer_list {
@@ -188,13 +388,13 @@ footer {
 }
 
 .footer_link {
-    color: #5c6460;
+    color: #5C6460;
     font-size: 0.8rem;
-    transition: 0.4s;
+    transition: 0s;
 }
 
 .footer_link:hover {
-    color: #a51c30;
+    color: #A51C30;
 }
 
 /* End of the top group */
@@ -204,12 +404,11 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0 0;
-    border-top: 1px solid #E2E4DE;
+    /* padding: 1rem 0 0; */
 }
 
 .footer_span {
-    color: #5c6460;
+    color: #5C6460;
     font-size: 0.8rem;
 }
 
